@@ -1,0 +1,74 @@
+body{
+                //padding:20px;
+                //margin:500px;
+                font-family:Arial;
+                font-size: 18px;
+                background-color:silver;
+}
+
+/*
+ <tag> : Aplica estilo directo a todos los <tag>; 
+ .estilo : Aplicar un estilo a un objeto de HTML con un;
+ #id : Aplicar un estilo a un id;
+
+*/
+
+.principal{
+                
+                border:2px;
+}
+
+.encabezado1{
+                width: 100%;
+                height: 100px;
+                background-color: D0FA58;
+                
+}
+
+.encabezado2{
+                width: 70%;
+                height: 100px;
+                float: right;
+                background-color: D0FA58;
+                margin: 20px 20px 20px 20px ;
+                //border:4px inset purple;
+}
+
+.contenido{
+                width: 96%;
+                height: 600px;
+                background-color: white;
+                //border:4px inset purple;
+}
+
+.menu{
+                width: 20%;
+                height: 550px;
+                background-color: D0FA58;
+                margin: 20px 20px 20px 20px ;
+                float: left;
+                //border:4px inset purple;
+                text-align:left;
+}
+
+.pagina{
+                width: 70%;
+                height: 400px;
+                background-color: D0FA58;
+                margin: 20px 20px 20px 20px ;
+                float: right;
+                //border:4px inset purple;
+                text-align:center;
+}
+
+.piepagina{
+                width: 96%;
+                height: 100px;
+                background-color: D0FA58;
+                margin: 20px 20px 20px 20px ;
+                //border-color: black;
+                //border:2px;
+                //border:4px inset purple;
+                font-family:Arial;
+                font-size: 10px;
+}

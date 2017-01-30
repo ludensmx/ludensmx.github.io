@@ -1,5 +1,13 @@
+/* Estilo que se aplica a toda la etiqueta <body> en el archivo html: 
+       ==> <body>
+
+       ==> </body> 
+*/
+
 body {
     margin: 0;
+    color: white;
+    background-color: #000;
 }
 
 
@@ -11,11 +19,12 @@ body {
 .menu {
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 15%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
-    overflow: auto;  
+    overflow: auto;
+    font-family: "Lucida Console";  
 }
 
  /* Estilo que se aplica a todas las <img> que contenga la clase menu en el archivo html:
@@ -24,16 +33,7 @@ body {
         </ul> 
 */
 .menu > img {
-    margin: 0px 0px -4px 0px; /* Se aplica a  */
-}
-
-/* Estilo que se aplica a todas las <li></li> que contenga la clase menu en el archivo html:
-        <ul class="menu">
-               ==> <li></li>
-        </ul> 
-*/
-.menu > li {
-    margin: 0px;
+    margin: 0px 0px -4px 0px; /* Se aplica los 4 (arriba, izquierda, abajo, derecha) margenes a la imagen del menu de Ludens */
 }
 
 /* Estilo que se aplica a todas las <a></a> que contenga la clase menu en el archivo html:
@@ -44,10 +44,10 @@ body {
         </ul> 
 */
 .menu > li > a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+    display: block; /* Tipo de Caja del elemento */
+    color: #000; /* Color de la letra */
+    padding: 10px 10px; /* Establece la anchura de arriba e izquierda del elemento */
+    text-decoration: none; /* Quita la viñeta del elemento */
 }
 
 /* Estilo que solo se aplica cuando el puntero del mouse pasa por las etiquetas (a:hover) <a></a> de la clase menu en el archivo html:
@@ -58,8 +58,8 @@ body {
         </ul> 
 */
 .menu > li > a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #555; /* Color de fondo */
+    color: white; /* Color de la letra */
 }
 
 
@@ -71,6 +71,6 @@ body {
         </ul> 
 */
 .menu > li > a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color de la letra */
 }

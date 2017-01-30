@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Head de Ludens -->
 <head>
+  <!--Permite a la página poder leer caracteres raros (Ejemplo: á, é, í, ó, ñ, etc...) -->
   <meta charset="UTF-8">
+  
+  <!-- Título de la página -->
   <title>Ludens &#127922;</title>
+
+  <!-- Referencia de la hoja de estilos CSS que se encuentra en estilo/estilo.css -->
   <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
 </head>
-<body>
+<!-- Fin de Head de Ludens -->
 
+<!-- Body de Ludens -->
+<body>
+  <!-- Menu de Ludens -->
   <ul class="menu">
+    <!-- Logo de Ludens -->
     <img src="imagenes/header.jpg" height="100px" width="100%">
+    
+    <!-- Item Home del menu Ludens -->
     <li > 
+      <!-- Link de la sección Home de Ludens -->
       <a class="active" href="#home">Home</a> 
     </li>
+
+    <!-- Item Nosotros del menu Ludens -->
     <li> 
+      <!-- Link de la sección Nosotros de Ludens -->
       <a href="#nosotros">Nosotros</a>
     </li>
+
+    <!-- Item Productos del menu Ludens -->
     <li> 
+      <!-- Link de la sección Productos de Ludens -->
       <a href="#productos">Productos</a>
     </li>
-    <li> 
+
+    <!-- Item Contacto del menu Ludens -->
+    <li>
+      <!-- Link de la sección Contacto de Ludens --> 
       <a href="#contacto">Contacto</a>
     </li>
   </ul>
+  <!-- Fin del menu de Ludens -->
 
-  <div id="home" name="home" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <!--Sección Home de Ludens-->
+  <div id="home" name="home" style="margin-left:15%;padding:1px 16px;height:1000px;">
     <h1>Home</h1>
   </div>
 
-  <div id="nosotros" name="nosotros" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <!--Sección Nosotros de Ludens-->
+  <div id="nosotros" name="nosotros" style="margin-left:15%;padding:1px 16px;height:1000px;">
     <h1>Nosotros</h1>
   </div>
   
-  <div id="productos" name="productos" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <!--Sección Productos de Ludens-->
+  <div id="productos" name="productos" style="margin-left:15%;padding:1px 16px;height:1000px;">
     <h1>Productos</h1>
   </div>
 
-  <div id="contacto" name="contacto" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <!--Sección Contacto de Ludens-->
+  <div id="contacto" name="contacto" style="margin-left:15%;padding:1px 16px;height:1000px;">
     <h1>Contacto</h1>
   </div>
 
+  <!-- Referencia para poder usar Javascript -->
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
+  <!-- Cógido Javascript para hacer la animación del Menu de Ludens -->
   <script type="text/javascript">
+    //Sucede cuando se da un click a un link (<a></a>) del menu (Home, Nosotros, Productos, Contacto)
     $('li a').click(function(e) {
-      
+      //Remueve la clase 'activo' del link que en ese momento se encuentra activo
       $('a').removeClass('active');
+      
+      //Añade la clase 'activo' del link al cual se le dio click
+      // $(this) => es el link que se le dio click
       $(this).addClass('active');
     });
 
   </script>
-
-
 </body>
+<!-- Body de Ludens -->
+
 </html>

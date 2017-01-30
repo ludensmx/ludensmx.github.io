@@ -1,74 +1,76 @@
-body{
-                //padding:20px;
-                //margin:500px;
-                font-family:Arial;
-                font-size: 18px;
-                background-color:silver;
+body {
+    margin: 0;
 }
 
-/*
- <tag> : Aplica estilo directo a todos los <tag>; 
- .estilo : Aplicar un estilo a un objeto de HTML con un;
- #id : Aplicar un estilo a un id;
 
+/* Estilo que se aplica a toda la clase menu en el archivo html: 
+       ==> <ul class="menu">
+
+       ==> </ul> 
 */
-
-.principal{
-                
-                border:2px;
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;  
 }
 
-.encabezado1{
-                width: 100%;
-                height: 100px;
-                background-color: D0FA58;
-                
+ /* Estilo que se aplica a todas las <img> que contenga la clase menu en el archivo html:
+        <ul class="menu"> 
+               ==> <img> 
+        </ul> 
+*/
+.menu > img {
+    margin: 0px 0px -4px 0px; /* Se aplica a  */
 }
 
-.encabezado2{
-                width: 70%;
-                height: 100px;
-                float: right;
-                background-color: D0FA58;
-                margin: 20px 20px 20px 20px ;
-                //border:4px inset purple;
+/* Estilo que se aplica a todas las <li></li> que contenga la clase menu en el archivo html:
+        <ul class="menu">
+               ==> <li></li>
+        </ul> 
+*/
+.menu > li {
+    margin: 0px;
 }
 
-.contenido{
-                width: 96%;
-                height: 600px;
-                background-color: white;
-                //border:4px inset purple;
+/* Estilo que se aplica a todas las <a></a> que contenga la clase menu en el archivo html:
+        <ul class="menu">
+                <li>
+                        ==> <a></a>
+                </li>
+        </ul> 
+*/
+.menu > li > a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
-.menu{
-                width: 20%;
-                height: 550px;
-                background-color: D0FA58;
-                margin: 20px 20px 20px 20px ;
-                float: left;
-                //border:4px inset purple;
-                text-align:left;
+/* Estilo que solo se aplica cuando el puntero del mouse pasa por las etiquetas (a:hover) <a></a> de la clase menu en el archivo html:
+        <ul class="menu">
+                <li>
+                        ==> <a></a>
+                </li>
+        </ul> 
+*/
+.menu > li > a:hover {
+    background-color: #555;
+    color: white;
 }
 
-.pagina{
-                width: 70%;
-                height: 400px;
-                background-color: D0FA58;
-                margin: 20px 20px 20px 20px ;
-                float: right;
-                //border:4px inset purple;
-                text-align:center;
-}
 
-.piepagina{
-                width: 96%;
-                height: 100px;
-                background-color: D0FA58;
-                margin: 20px 20px 20px 20px ;
-                //border-color: black;
-                //border:2px;
-                //border:4px inset purple;
-                font-family:Arial;
-                font-size: 10px;
+/* Estilo que solo se aplica cuando el puntero del mouse pasa por las etiquetas (a:hover) <a></a> de la clase menu en el archivo html:
+        <ul class="menu">
+                <li>
+                        ==> <a></a>
+                </li>
+        </ul> 
+*/
+li.active {
+    background-color: #4CAF50;
+    color: white;
 }

@@ -10,7 +10,6 @@ body {
     background-color: #000;
 }
 
-
 /* Estilo que se aplica a toda la clase menu en el archivo html: 
        ==> <ul class="menu">
 
@@ -73,4 +72,10 @@ body {
 .menu > li > a.active {
     background-color: #4CAF50; /* Color de fondo */
     color: white; /* Color de la letra */
+}
+
+.seccion {
+    margin-left:15%; /* Modifica el margen izquierdo un 15% */
+    padding:1px 16px; /* Establece la anchura de arriba e izquierda del elemento */
+    height:1000px; /* Modifica el ancho que tendra el elemento */
 }

@@ -48,22 +48,22 @@
   <!-- Fin del menu de Ludens -->
 
   <!--Sección Home de Ludens-->
-  <div id="home" name="home" style="margin-left:15%;padding:1px 16px;height:1000px;">
+  <div id="home" name="home" class="seccion" hidden>
     <h1>Home</h1>
   </div>
 
   <!--Sección Nosotros de Ludens-->
-  <div id="nosotros" name="nosotros" style="margin-left:15%;padding:1px 16px;height:1000px;">
+  <div id="nosotros" name="nosotros" class="seccion" hidden>
     <h1>Nosotros</h1>
   </div>
   
   <!--Sección Productos de Ludens-->
-  <div id="productos" name="productos" style="margin-left:15%;padding:1px 16px;height:1000px;">
+  <div id="productos" name="productos" class="seccion" hidden>
     <h1>Productos</h1>
   </div>
 
   <!--Sección Contacto de Ludens-->
-  <div id="contacto" name="contacto" style="margin-left:15%;padding:1px 16px;height:1000px;">
+  <div id="contacto" name="contacto" class="seccion" hidden>
     <h1>Contacto</h1>
   </div>
 
@@ -72,8 +72,23 @@
 
   <!-- Cógido Javascript para hacer la animación del Menu de Ludens -->
   <script type="text/javascript">
+    // Se ejecuta cuando la página se ha cargado al 100%
+    $( document ).ready(function() {
+      //Muestra la sección con id home
+      $('#home').show();
+    });
+
     //Sucede cuando se da un click a un link (<a></a>) del menu (Home, Nosotros, Productos, Contacto)
-    $('li a').click(function(e) {
+    $('a').click(function(e) {
+      //Obtiene el id de la sección que se va a mostrar
+      var seccion = e.currentTarget.hash;
+
+      //Manda a llamar la función esconderTodosLosElementos
+      esconderTodosLosElementos();
+
+      //Manda a llamar la función mostrarElemento y le envía el id que guarda la variable seccion
+      mostrarElemento(seccion);
+
       //Remueve la clase 'activo' del link que en ese momento se encuentra activo
       $('a').removeClass('active');
       
@@ -81,6 +96,29 @@
       // $(this) => es el link que se le dio click
       $(this).addClass('active');
     });
+
+    //Función que se encarga de esconder todos los elementos
+    function esconderTodosLosElementos() {
+      //Esconde la sección con el id home
+      $('#home').hide();
+
+      //Esconde la sección con el id nosotros
+      $('#nosotros').hide();
+
+      //Esconde la sección con el id productos
+      $('#productos').hide();
+
+      //Esconde la sección con el id contacto
+      $('#contacto').hide();
+    }
+
+    //Función que se encarga de mostrar un elemento
+    function mostrarElemento(id) {
+      //Muestra el id de la sección
+      $(id).show();
+    }
+
+
 
   </script>
 </body>

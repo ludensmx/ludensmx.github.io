@@ -18,12 +18,12 @@ body {
 .menu {
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 200px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
     overflow: auto;
-    font-family: "Lucida Console";  
+    font-family: 'Rubik', sans-serif;  
 }
 
  /* Estilo que se aplica a todas las <img> que contenga la clase menu en el archivo html:
@@ -78,4 +78,9 @@ body {
     margin-left:15%; /* Modifica el margen izquierdo un 15% */
     padding:1px 16px; /* Establece la anchura de arriba e izquierda del elemento */
     height:1000px; /* Modifica el ancho que tendra el elemento */
+}
+
+.titulo {
+    font-family: 'Barrio', cursive;
+    text-align: center;
 }

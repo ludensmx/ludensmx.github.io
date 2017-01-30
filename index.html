@@ -9,8 +9,8 @@
 
   <ul class="menu">
     <img src="imagenes/header.jpg" height="100px" width="100%">
-    <li class="active"> 
-      <a href="#home">Home</a> 
+    <li > 
+      <a class="active" href="#home">Home</a> 
     </li>
     <li> 
       <a href="#nosotros">Nosotros</a>
@@ -30,18 +30,22 @@
   <div id="nosotros" name="nosotros" style="margin-left:25%;padding:1px 16px;height:1000px;">
     <h1>Nosotros</h1>
   </div>
+  
+  <div id="productos" name="productos" style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1>Productos</h1>
+  </div>
+
+  <div id="contacto" name="contacto" style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1>Contacto</h1>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
   <script type="text/javascript">
-    
-    $('.menu li').click(function(e) {
-      $('.menu li.active').removeClass('active');
-      var $this = $(this);
-      if (!$this.hasClass('active')) {
-          $this.addClass('active');
-      }
-      e.preventDefault();
+    $('li a').click(function(e) {
+      
+      $('a').removeClass('active');
+      $(this).addClass('active');
     });
 
   </script>

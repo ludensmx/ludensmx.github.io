@@ -70,7 +70,7 @@ body {
                 </li>
         </ul> 
 */
-li.active {
+.menu > li > a.active {
     background-color: #4CAF50;
     color: white;
 }

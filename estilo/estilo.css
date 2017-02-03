@@ -16,14 +16,11 @@ body {
        ==> </ul> 
 */
 .menu {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Rubik', sans-serif;  
+    overflow: hidden;
+    background-color: #fff;
 }
 
  /* Estilo que se aplica a todas las <img> que contenga la clase menu en el archivo html:
@@ -43,7 +40,7 @@ body {
         </ul> 
 */
 .menu > li > a {
-    display: block; /* Tipo de Caja del elemento */
+    float: left;
     color: #000; /* Color de la letra */
     padding: 10px 10px; /* Establece la anchura de arriba e izquierda del elemento */
     text-decoration: none; /* Quita la viñeta del elemento */

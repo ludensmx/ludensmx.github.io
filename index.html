@@ -33,41 +33,43 @@
     <!-- Item Nosotros del menu Ludens -->
     <li> 
       <!-- Link de la sección Nosotros de Ludens -->
-      <a href="#nosotros">Nosotros</a>
+      <a href="#">Nosotros</a>
     </li>
 
     <!-- Item Productos del menu Ludens -->
     <li> 
       <!-- Link de la sección Productos de Ludens -->
-      <a href="#productos">Productos</a>
+      <a href="#">Productos</a>
     </li>
 
     <!-- Item Contacto del menu Ludens -->
     <li>
       <!-- Link de la sección Contacto de Ludens --> 
-      <a href="#contacto">Contacto</a>
+      <a href="#">Contacto</a>
     </li>
   </ul>
   <!-- Fin del menu de Ludens -->
 
-  <!--Sección Home de Ludens-->
-  <div id="home" name="home" class="seccion" hidden>
-    <h1 class="titulo">Ludens</h1>
-  </div>
+  <div id="contenido" name="contenido">
+    <!--Sección Home de Ludens-->
+    <div id="home" name="home" class="seccion" hidden>
+      <h1 class="titulo">Ludens</h1>
+    </div>
 
-  <!--Sección Nosotros de Ludens-->
-  <div id="nosotros" name="nosotros" class="seccion" hidden>
-    <h1 class="titulo">Nosotros</h1>
-  </div>
-  
-  <!--Sección Productos de Ludens-->
-  <div id="productos" name="productos" class="seccion" hidden>
-    <h1 class="titulo">Productos</h1>
-  </div>
+    <!--Sección Nosotros de Ludens-->
+    <div id="nosotros" name="nosotros" class="seccion" hidden>
+      <h1 class="titulo">Nosotros</h1>
+    </div>
+    
+    <!--Sección Productos de Ludens-->
+    <div id="productos" name="productos" class="seccion" hidden>
+      <h1 class="titulo">Productos</h1>
+    </div>
 
-  <!--Sección Contacto de Ludens-->
-  <div id="contacto" name="contacto" class="seccion" hidden>
-    <h1 class="titulo">Contacto</h1>
+    <!--Sección Contacto de Ludens-->
+    <div id="contacto" name="contacto" class="seccion" hidden>
+      <h1 class="titulo">Contacto</h1>
+    </div>
   </div>
 
   <!-- Referencia para poder usar Javascript -->
@@ -78,7 +80,7 @@
     // Se ejecuta cuando la página se ha cargado al 100%
     $( document ).ready(function() {
       //Muestra la sección con id home
-      $('#home').show();
+      $("#home").show();
     });
 
     //Sucede cuando se da un click a un link (<a></a>) del menu (Home, Nosotros, Productos, Contacto)

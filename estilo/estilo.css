@@ -21,6 +21,14 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #fff;
+    font-family: 'Rubik';
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.elementoSeparacion {
+    
 }
 
  /* Estilo que se aplica a todas las <img> que contenga la clase menu en el archivo html:

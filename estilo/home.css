@@ -1,0 +1,21 @@
+#izq {
+	margin-left: 5%;
+	margin-top: 5%;
+    float:left;
+
+}
+
+#der {
+    margin-right: 20%;
+	margin-top: 5%;
+    float:right;
+}
+
+.division {
+    position:absolute;
+    left:55%;
+    top:30%;
+    bottom:23%;
+    border-left:2px solid #95979b;
+    box-shadow: 1px 0 10px 0px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+}

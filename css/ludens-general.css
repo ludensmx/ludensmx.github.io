@@ -1,0 +1,34 @@
+body {
+	margin: 0;				
+}
+
+.caja-menu {
+	-webkit-box-shadow: 0 6px 6px -6px #222;
+	-moz-box-shadow: 0 6px 6px -6px #222;
+	box-shadow: 0 6px 6px -6px #222
+}
+
+.menu {
+	display: flex;
+	width: 100%;
+}
+
+.menu > a {
+	color: green;
+	flex-grow: 1;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+} 
+
+.menu > a:hover {
+	background-color: green;
+	color: white;
+}
+
+#portada {
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+	height: 100px;
+} 

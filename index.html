@@ -3,73 +3,36 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Ludens MX</title>
+		<!-- Links de las hojas de estilo que requiere la pagina INDEX -->
 		<link rel="stylesheet" type="text/css" href="css/ludens-general.css">
-		<style>
-
-			/*
-				Estilo general
-			*/
-			section {
-				height: 50%;
-			    background: #EEE;
-			    display: flex;
-			    flex-direction: row;
-			    align-items: flex-start;
-			    align-content: center;
-			}
-
-			.item {
-				height: 400px;
-				width: 400px; 
-			}
-
-
-
-			/*
-				Estilo que se aplica cuando la pantalla tiene como maximo de ancho 768px 
-				y esta en orientación portrair
-			*/
-
-			@media only screen and (max-width: 768px) and (orientation: portrait) {
-			    section {
-					height: 50%;
-				    background: #EEE;
-				    display: flex;
-				    flex-direction: column;
-				    align-items: flex-start;
-				    align-content: center;
-				}
-
-				.item {
-					width: 100%;
-				}
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/ludens-index.css">
 	</head>
 	<body>
-		<!--Barra de Navegación-->
+		<!-- Barra de Navegación-->
 		<header>
 			<div class="caja-menu">
-				<img id="portada" src="recursos/header.png">
+				<!-- Imagen del Header de la página -->
+				<img id="portada" src="recursos/index/header.png">
 				<nav class="menu">
-					<a href="#">I N I C I O</a>
-					<a href="#">J U E G O S</a>
-					<a href="#">N O S O T R O S</a>
-					<a href="#">C O N T A C T O</a>
+					<!--Link que tiene la clase 'active' que pone de fondo la opción del menu en el cual se encuentra el usuario -->
+					<a href="index.html" id="inicio" class="activo" style="color: white">I N I C I O</a>
+					
+					<a href="juegos.html" id="juegos">J U E G O S</a>
+					<a href="nosotros.html" id="nosotros">N O S O T R O S</a>
+					<a href="contacto.html" id="contacto">C O N T A C T O</a>
 				</nav>
 			</div>
 		</header>
 
-		<!--Contenido Ludens-->
-		<section>
-			<div class="item">
-				<iframe class="item" src="https://www.youtube.com/embed/aq1Fti9-ct4"></iframe>
+		<!-- Sección de Contenido de la pagina INDEX-->
+		<div class="contenido">
+			<!-- Imagen con el Texto de Bienvenida-->
+			<img class="item" width="400" height="400" src="recursos/index/index.png">
 
-			</div>
-		    <div class="item">
-		    	<img class="item" src="recursos/1.jpg">
-		    </div>
-		</section>
+			<!-- Video de YouTube con el parametro de autoreproducción-->
+			<iframe class="item" width="650" height="350" src="https://www.youtube.com/embed/OEcsRcYZx_0?autoplay=1"></iframe>
+		</div>
+
 	</body>
 </html>
 

@@ -1,0 +1,14 @@
+.contenido {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.item {
+	margin: 40px;
+}
+
+.activo {
+	background-color: #FBAF3F;
+}

@@ -1,34 +1,117 @@
 body {
-	margin: 0;				
+	/* Indica que el body ocupe toda pantalla */
+	margin: 0;
+
+	/* Fuente de la página */
+	font-family: 'Century Gothic';				
 }
 
+/* Efecto de sombra sobre el menú */
+
 .caja-menu {
+	/* Compatibilidad Safari */
 	-webkit-box-shadow: 0 6px 6px -6px #222;
+
+	/* Compatibilidad Mozilla */
 	-moz-box-shadow: 0 6px 6px -6px #222;
+
+	/* CSS */
 	box-shadow: 0 6px 6px -6px #222
+
 }
 
 .menu {
+	/* Responsivo 'Nativo' */
+	/* Coloca todo en un contenedor y lo acomoda horizontalmente por default */
 	display: flex;
+
+	/* Cuando el contenedor se empieza a hacer más  un contenedor */
+	flex-wrap: wrap;
+
+	/* Indica que ocupa el 100% de largo de la pantalla  */
 	width: 100%;
 }
 
 .menu > a {
-	color: green;
+	/* Indica cuanto crecerá cada tag <a></a> para ajustarla dependiendo cuantas tag contenga el contenedor 'menu' */
 	flex-grow: 1;
+	
+	/* Agrega un espacio de 10px en cada borde de los tag <a></a> de la barra de navegación  */
 	padding: 10px;
+	
+	/* Remueve el subrayado de los tag <a></a> de la barra de navegación */
 	text-decoration: none;
+
+	/* Ajusta el texto en medio por cada tag <a></a> */
 	text-align: center;
 } 
 
-.menu > a:hover {
-	background-color: green;
+#portada {
+	/* Indica que ese elemento ocupara todo el espacio que lo contiene */
+	display: block;
+	margin: 0px auto;
+
+	/* Indica que ocupará el 100% de largo de la pantalla */
+	width: 100%;
+
+	/* Indica que tiene 100px de altura*/
+	height: 100px;
+} 
+
+/* Sección de colores cuando el cursor del mouse NO se posicione en una opción del menú */
+
+#inicio {
+	/* Color de la letra Naranja */
+	color: #FBAF3F;
+}
+
+#juegos {
+	/* Color de la letra Azul */
+	color: #27A9E1;
+}
+
+#nosotros {
+	/* Color de la letra Verde */
+	color: #008D3C;
+}
+
+#contacto {
+	/* Color de la letra Rosa */
+	color: #EC008B;
+}
+
+/* Fin de la Sección */
+
+/* Sección de colores cuando el cursor del mouse SI se posicione en una opción del menú */
+
+#inicio:hover { 
+	/* Color Fondo Naranja */
+	background-color: #FBAF3F;
+
+	/* Color de la letra Blanco */
 	color: white;
 }
 
-#portada {
-	display: block;
-	margin: 0px auto;
-	width: 100%;
-	height: 100px;
-} 
+#juegos:hover { 
+	/* Color Fondo Azul */
+	background-color: #27A9E1;
+	
+	color: white;
+}
+
+#nosotros:hover { 
+	/* Color Fondo Verde */
+	background-color: #008D3C;
+	
+	color: white;
+}
+
+#contacto:hover { 
+	/* Color Fondo Rosa */
+	background-color: #EC008B;
+
+	color: white;
+}
+
+/* Fin de la Sección */
+

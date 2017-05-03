@@ -1,0 +1,26 @@
+.contenido {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.item {
+	margin: 20px;
+}
+
+.figura {
+	display: block;
+}
+
+.activo {
+	background-color: #27A9E1;
+}
+
+.caja-texto {
+	width: 400px; 
+	color: #27A9E1;
+	/* Justifica el texto */
+	text-align: justify-all;
+}
